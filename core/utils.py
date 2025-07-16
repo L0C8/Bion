@@ -9,7 +9,7 @@ def apply_bionic(text):
         if len(word) <= 2:
             return word
         cutoff = max(1, len(word) // 3)
-        return f"<b>{word[:cutoff]}</b>{word[cutoff:]}"
+        return f"<span style='font-weight:bold; font-size:1.1em'>{word[:cutoff]}</span>{word[cutoff:]}"
     
     result = []
     for token in text.split():
